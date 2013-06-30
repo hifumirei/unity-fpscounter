@@ -4,6 +4,7 @@ using System.Collections;
 public class FPSCounter : MonoBehaviour
 {
     public Rect position = new Rect(0, 0, 100, 100);
+    public GUIStyle style;
     private int count;
     private float time;
     private string text;
@@ -30,6 +31,6 @@ public class FPSCounter : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(position, text);
+        GUI.Label(position, text, style);
     }
 }
